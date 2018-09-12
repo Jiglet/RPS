@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="styles.css">
+		<title>Rock Paper Scissors</title>
+	</head>
+	
+	<body>
+		<header>
+			<h1>Rock Paper Scissors</h1>
+		</header>
+
+		<div class="scoreboard">
+			<div id="player1" class="name">P1</div>
+			<div id="player2" class="name">P2</div>
+			<span id="player1-score">0</span>:<span id="player2-score">0</span>
+		</div>
+
+		<div style="text-decoration: underline" id="announcement" class="round">
+			<p>Round 1</p>
+		</div>
+		<div id="announcement" class="result">
+			<p>Shoot!</p>
+		</div>
+
+		<div class="choices">
+			<div id="rock" class="choice">
+				<img class="img" src="images/rock.png" alt="">
+			</div>
+			<div id="paper" class="choice">
+				<img class="img" src="images/paper.png" alt="">
+			</div>
+			<div id="scissor" class="choice">
+				<img class="img" src="images/scissor.png" alt="">
+			</div>
+		</div>
+
+		<div class="rps-wrapper">
+      		<ul id="events"></ul>
+      		<div class="controls">
+       			<div class="chat-wrapper">
+         			<form id="chat-form">
+            			<input id="chat" autocomplete="off" title="chat"/>
+            			<button id="say">Say</button>
+         			 </form>
+      			</div>
+      		</div>
+      	</div>
+
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="client.js" charset="utf-8"></script>
+	</body>	
+
+
+</html>
